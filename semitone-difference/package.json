@@ -1,0 +1,19 @@
+{
+  "name": "semitone-difference",
+  "version": "1.0.0",
+  "description": "Basic algorithm - part one of semitone challenge",
+  "main": "difference.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ferronique-May/semitone-challenge.git"
+  },
+  "author": "Ferronique May Rokhuda Tshitimbi Zoleka Kubheka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ferronique-May/semitone-challenge/issues"
+  },
+  "homepage": "https://github.com/Ferronique-May/semitone-challenge#readme"
+}
