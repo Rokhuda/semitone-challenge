@@ -1,0 +1,23 @@
+{
+  "name": "advanced-algorithm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "advanceAlgorithm.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rokhuda/semitone-challenge.git"
+  },
+  "author": "rokhuda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rokhuda/semitone-challenge/issues"
+  },
+  "homepage": "https://github.com/Rokhuda/semitone-challenge#readme",
+  "dependencies": {
+    "jasmine": "^3.5.0",
+    "jsdom": "^15.1.1"
+  }
+}
