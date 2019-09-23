@@ -1,0 +1,22 @@
+{
+  "name": "gui-part1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "guiPart1.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rokhuda/semitone-challenge.git"
+  },
+  "author": "rokhuda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rokhuda/semitone-challenge/issues"
+  },
+  "homepage": "https://github.com/Rokhuda/semitone-challenge#readme",
+  "dependencies": {
+    "jsdom": "^15.1.1"
+  }
+}
