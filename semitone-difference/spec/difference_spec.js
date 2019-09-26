@@ -1,17 +1,17 @@
 describe("JamBuddy", () => {
     var JamBuddy, jamBuddy;
     beforeEach(() => {
-        JamBuddy = require('../difference');
+        JamBuddy = require('../difference.js');
         jamBuddy = new JamBuddy();
     });
 
     describe("selectNotes", () => {
- 
-        it("should be defined",() => {
+
+        it("should be defined", () => {
             expect(jamBuddy.selectNotes()).toBeDefined;
         });
 
-        it("should return two randomly selected notes ",() => {
+        it("should return two randomly selected notes ", () => {
             expect(jamBuddy.selectNotes().length).toEqual(2);
         });
 
@@ -20,8 +20,8 @@ describe("JamBuddy", () => {
         });
     });
 
-    describe("checkAnswer",() => {
-        
+    describe("checkAnswer", () => {
+
         it("should be defined", () => {
             expect(jamBuddy.checkAnswer()).toBeDefined;
         });
