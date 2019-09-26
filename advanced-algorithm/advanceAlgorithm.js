@@ -20,34 +20,31 @@ class JamBuddy {
             .split(",")
             .sort(() => Math.random() - 0.5)
             .slice(0, 2);
+
         return this.notes;
     }
+
     calcuDistance() {
-        let firstNote = this.notes[0];
-        let secondNote = this.notes[1];
-        let firstPos, secondPos;
-        firstPos = this.notesArray.indexOf(firstNote);
-        secondPos = this.notesArray.indexOf(secondNote);
-        if (firstPos == -1 || secondPos == -1) {
-            for (let i = 0; i < this.notesArray.length; i++) {
-                if (
-                    firstNote == this.notesArray[i][0] ||
-                    firstNote == this.notesArray[i][1]
-                ) {
-                    firstPos = i;
-                } else if (
-                    secondNote == this.notesArray[i][0] ||
-                    secondNote[1] == this.notesArray[i][1]
-                ) {
-                    secondPos = i;
-                }
+        for (let i = 0; i < this.notesArray.length; i++) {
+            if (
+                this.notes[0] == this.notesArray[i][0] ||
+                this.notes[0] == this.notesArray[i][1]
+            ) {
+                this.firstPos = i;
+            }
+            if (
+                this.notes[1] == this.notesArray[i][0] ||
+                this.notes[1] == this.notesArray[i][1]
+            ) {
+                this.secondPos = i;
             }
         }
-        if (firstPos < secondPos) {
-            this.distance = secondPos - firstPos;
-        } else if (firstPos > secondPos) {
-            this.distance = secondPos + 12 - firstPos;
+        if (this.firstPos <= this.secondPos) {
+            this.distance = this.secondPos - this.firstPos;
+        } else if (this.firstPos > this.secondPos) {
+            this.distance = this.secondPos + 12 - this.firstPos;
         }
+
         return this.distance;
     }
 
