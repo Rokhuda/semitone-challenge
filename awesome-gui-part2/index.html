@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./src/guiPart2.js"></script>
+    <title>Semitone-Challenge</title>
+  </head>
+  <body>
+    <h1>Semitone-Challenge</h1>
+    <p>
+      Click the button below to receive your notes and tell JamBuddy how much
+      semitones apart the notes are!
+    </p>
+
+    <div id="RandomNotes"></div>
+    <button onclick="getRandomNotes()">Get random notes</button><br /><br />
+    <div id="explanation"></div>
+    <button onclick="revealAnswer()">Reveal answer</button><br /><br />
+
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Enter semitone difference"
+    /><br /><br />
+    <button onclick="getAnswer()">Submit</button>
+    <div id="result"></div>
+    <div id="streak"></div>
+
+    <script>
+      window.onload = function() {
+        getRandomNotes();
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "awesome-gui-part4",
+  "version": "1.0.0",
+  "description": "Improved user intreface",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ferronique-May/semitone-challenge.git"
+  },
+  "author": "Rokhuda Tshitimbi, Zoleka Kubheka, Ferronique May",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ferronique-May/semitone-challenge/issues"
+  },
+  "homepage": "https://github.com/Ferronique-May/semitone-challenge#readme",
+  "dependencies": {
+    "jsdom": "^15.1.1"
+  }
+}
